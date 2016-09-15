@@ -21,4 +21,4 @@ This PHP Shell is a useful tool for system or web administrator to do remote man
 
 ##Пароль: admin
 ## Скриншот
-![](http://cs621518.vk.me/v621518400/d6ad/e3CgJxw9ThA.jpg)
+![](http://i.imgur.com/8cW2dFI.jpg)
