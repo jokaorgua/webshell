@@ -93,12 +93,12 @@ function hardHeader() {
 	a:hover		{text-decoration:underline;}
 	.tooltip::after {background:#0663D5;color:#FFF;content: attr(data-tooltip);margin-top:-50px;display:block;padding:6px 10px;position:absolute;visibility:hidden;}
 	.tooltip:hover::after {opacity:1;visibility:visible;}
-	.ml1		{border:1px solid #202832;padding:5px;margin:0;overflow:auto;}
+	.ml1		{border:1px solid #1e252f;padding:5px;margin:0;overflow:auto;}
 	.bigarea	{min-width:100%;max-width:100%;height:400px;}
-	input, textarea, select	{margin:0;color:#fff;background-color:#202832;border:none;font:9pt Courier New;outline:none;}
+	input, textarea, select	{margin:0;color:#fff;background-color:#1e252f;border:none;font:9pt Courier New;outline:none;}
 	label {position:relative}
 	label:after {content:'<>';font:10px 'Consolas', monospace;color:#fff;-webkit-transform:rotate(90deg);-moz-transform:rotate(90deg);-ms-transform:rotate(90deg);transform:rotate(90deg);right:3px; top:3px;padding:0;position:absolute;pointer-events:none;}
-	label:before {content:'';right:0; top:0;width:17px; height:17px;background:#202832;position:absolute;pointer-events:none;display:block;}
+	label:before {content:'';right:0; top:0;width:17px; height:17px;background:#1e252f;position:absolute;pointer-events:none;display:block;}
 	form		{margin:0px;}
 	#toolsTbl	{text-align:center;}
 	#fak 		{background:none;}
@@ -112,7 +112,7 @@ function hardHeader() {
 	input[type='button']{background-color:#2E6E9C;}
 	input[type='submit']:hover{background-color:#56AD15;}
 	input[type='button']:hover{background-color:#56AD15;}
-	.l1			{background-color:#202832;}
+	.l1			{background-color:#1e252f;}
 	pre			{font:9pt Courier New;}
 </style>
 <script>
@@ -552,7 +552,7 @@ function actionFilesTools() {
 					$h[2] .= "\n";
 				}
 		 	}
-			echo '<table cellspacing=1 cellpadding=5 bgcolor=#222><tr><td bgcolor=#202832><span style="font-weight: normal;"><pre>'.$h[0].'</pre></span></td><td bgcolor=#060a10><pre>'.$h[1].'</pre></td><td bgcolor=#202832><pre>'.htmlspecialchars($h[2]).'</pre></td></tr></table>';
+			echo '<table cellspacing=1 cellpadding=5 bgcolor=#222><tr><td bgcolor=#1e252f><span style="font-weight: normal;"><pre>'.$h[0].'</pre></span></td><td bgcolor=#060a10><pre>'.$h[1].'</pre></td><td bgcolor=#1e252f><pre>'.htmlspecialchars($h[2]).'</pre></td></tr></table>';
 			break;
 		case 'rename':
 			if( !empty($_POST['p3']) ) {
